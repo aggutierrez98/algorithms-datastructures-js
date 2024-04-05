@@ -5,6 +5,17 @@
 // every node's right hand child is greater than
 // the parent
 
-function validate(node, min = null, max = null) {}
+const Node = require("./node");
+/**
+ * @param {Node} node
+ * @param {Number?} min
+ * @param {Number?} max
+ */
+function validate(node, min = null, max = null) {
+    if ((min && node.data <= min) || (max && node.data >= max)) return false
+    if (node.left && !validate(node.left, min, node.data)) return false
+    if (node.right && !validate(node.right, node.data, max)) return false
+    return true
+}
 
 module.exports = validate;

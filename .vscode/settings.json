@@ -1,0 +1,11 @@
+{
+  "CodeGPT.apiKey": "OpenAI",
+  "codeium.enableConfig": {
+    "*": false
+  },
+  "codeium.enableCodeLens": false,
+  "codium.codeCompletion.enable": false,
+  "codium.enable": false,
+  "aws.codeWhisperer.includeSuggestionsWithCodeReferences": false,
+  "aws.codeWhisperer.importRecommendation": false
+}
