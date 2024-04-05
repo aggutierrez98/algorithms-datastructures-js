@@ -1,0 +1,14 @@
+{
+  "name": "aggutierrez-algocasts-excercises",
+  "version": "1.0.0",
+  "description": "Made excercises of The Coding Inteview Bootcamp: Algorithms + Data Structures course by Stephen Grinder",
+  "main": "index.js",
+  "author": "aggutierrez",
+  "scripts": {
+    "test-all": "npx jest --watch /exercises",
+    "test": "npx jest --watch /exercises/${npm_config_path}"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
